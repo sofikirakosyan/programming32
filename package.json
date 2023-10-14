@@ -1,0 +1,23 @@
+{
+  "name": "programming32",
+  "version": "1.0.0",
+  "main": "bomb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofikirakosyan/programming32.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofikirakosyan/programming32/issues"
+  },
+  "homepage": "https://github.com/sofikirakosyan/programming32#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
