@@ -1,6 +1,6 @@
 //ays kerpar@ tigeri char tesakn e 
-
-class Bomb {
+let  random = require("./random");
+module.exports = class Bomb {
     constructor(x, y) {
         this.x = x;
         this.y = y;

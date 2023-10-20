@@ -1,4 +1,6 @@
-class predator {
+let random = require("./random");
+
+module.exports = class predator {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
@@ -36,11 +38,11 @@ class predator {
     }
 
     mul() {
-        var newCell = random(this.chooseCell(0)); 
-        if (newCell) { 
-            var newGrassE = new GrassEater(newCell[0], newCell[1], 3); 
-            grassEaterArr.push(newGrassE); 
-            matrix[newCell[1]][newCell[0]] = 3; 
+        var newCell = random(this.chooseCell(0));
+        if (newCell) {
+            var newGrassE = new GrassEater(newCell[0], newCell[1], 3);
+            grassEaterArr.push(newGrassE);
+            matrix[newCell[1]][newCell[0]] = 3;
         }
 
     }
@@ -48,7 +50,7 @@ class predator {
     move() {
         if (this.energy > 0) {
             this.energy--;
-    
+
             let emptyCells = this.chooseCell(0)
             let oneEmptyCell = random(emptyCells)
             if (oneEmptyCell) {
@@ -61,7 +63,7 @@ class predator {
 
             }
         }
-        
+
     }
     eat() {
         let grasses = this.chooseCell(2)
@@ -73,8 +75,8 @@ class predator {
             let oneGrassY = oneGrass[1];
             matrix[oneGrassY][oneGrassX] = 3;
             this.x = oneGrassX;
-            this.y = oneGrassY; 
-            for (var i in grassEaterArr) { 
+            this.y = oneGrassY;
+            for (var i in grassEaterArr) {
                 if (oneGrassX == grassEaterArr[i].x && oneGrassY == grassEaterArr[i].y) {
                     grassArr.splice(i, 1);
                     break;

@@ -1,6 +1,7 @@
 //tiger@ mi kerpar e vor@ir yetevic toxnum e grass
 //uni mi shat hetaqrqir arancnahatkutyun
-class Tiger {
+let  random = require("./random");
+module.exports = class Tiger {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
