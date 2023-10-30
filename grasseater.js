@@ -1,5 +1,5 @@
 let  random = require("./random");
-module.exports = class GrassEater {
+module.exports = class GrassEater extends livingCreature{
     constructor(x, y, index) {
         this.x = x;
         this.y = y;

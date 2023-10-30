@@ -1,6 +1,6 @@
 let random = require("./random");
 
-module.exports = class predator {
+module.exports = class predator extends livingCreature{
     constructor(x, y, index) {
         this.x = x;
         this.y = y;

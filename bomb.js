@@ -1,6 +1,7 @@
 //ays kerpar@ tigeri char tesakn e 
+let Grass  = require("./Grass")
 let  random = require("./random");
-module.exports = class Bomb {
+module.exports = class Bomb extends livingCreature{
     constructor(x, y) {
         this.x = x;
         this.y = y;

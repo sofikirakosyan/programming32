@@ -9,8 +9,22 @@ function setup() {
     background('#acacac');
 
 }
+let currentWeather = "Spring"
+let weatherDocument = document.getElementById("weather")
+let SpoofButton  = document.getElementById(SpoofButton)
+let SpoofRegime = false;
+let SpoofLayer = document.getElementById("SpoofLayer")
+let clickRadius = 0;
+let clickRadiusRange = document.getElementById("clickRadiusRange")
+let toIndex = 5;
+let toIndexDocument = document.getElementById("toIndex")
 
-
+let grassBitenDocument = document.getElementById("grassBiten");
+let grassAdustDocument = document.getElementById("grassAdust");
+let grassBiterEatenDocument = document.getElementById("grassBiterEaten");
+let tilesBurstDocument = document.getElementById("tilesBurst");
+let grassSprayedDocument = document.getElementById("grassSprayed");
+let instantNumberOfGrassDocument = document.getElementById("instantNumberOfGrass");
 
 function drawmatrix(data) {
     matrix = data.matrix;
