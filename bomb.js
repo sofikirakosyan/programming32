@@ -1,10 +1,10 @@
 //ays kerpar@ tigeri char tesakn e 
 let Grass  = require("./Grass")
 let  random = require("./random");
-module.exports = class Bomb extends livingCreature{
+let  LivingCreature = require("./livingCreature");
+module.exports = class Bomb extends LivingCreature{
     constructor(x, y) {
-        this.x = x;
-        this.y = y;
+        super(x,y)
         this.energy = 40;
         this.directions = [];
     }

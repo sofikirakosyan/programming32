@@ -1,12 +1,12 @@
 //tiger@ mi kerpar e vor@ir yetevic toxnum e grass
 //uni mi shat hetaqrqir arancnahatkutyun
 let  random = require("./random");
-module.exports = class Tiger extends livingCreature{
+let Grass = require('./grass');
+let  LivingCreature = require("./livingCreature");
+module.exports = class Tiger extends LivingCreature{
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
+        super(x,y,index)
         this.energy = 20;
-        this.index = index;
         this.directions = [];
     }
     getNewCoordinates() {
@@ -121,4 +121,6 @@ module.exports = class Tiger extends livingCreature{
         }
     }
 }
+
+
 

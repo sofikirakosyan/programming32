@@ -1,11 +1,9 @@
 let random = require("./random");
-
-module.exports = class predator extends livingCreature{
+let  LivingCreature = require("./livingCreature");
+module.exports = class predator extends LivingCreature{
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
+        super(x,y,index)
         this.energy = 8;
-        this.index = index;
         this.directions = [];
     }
     getNewCoordinates() {

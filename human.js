@@ -1,9 +1,7 @@
 let Grass = require('./grass')
-
-
-
-module.exports = class Human extends livingCreature {
-  
+let random = require("./random");
+let  LivingCreature = require("./livingCreature");
+module.exports = class Human extends LivingCreature {
     constructor(x, y) {
         super(x,y);   
         this.energy = 20;
